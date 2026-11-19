@@ -1,0 +1,18 @@
+{
+  "name": "contour-sampler",
+  "version": "1.0.0",
+  "description": "Topological dual-grid boundary sampler: turn any video into clean closed contours. Browser app + CLI, zero dependencies.",
+  "license": "MIT",
+  "bin": {
+    "contour-sample": "cli/sample.js",
+    "contour-decode": "cli/decode.js"
+  },
+  "scripts": {
+    "start": "npx --yes http-server -c-1 -p 8080 .",
+    "test": "node test/selftest.js",
+    "sample": "node cli/sample.js",
+    "decode": "node cli/decode.js"
+  },
+  "engines": { "node": ">=18" },
+  "files": ["index.html", "web", "src", "cli", "README.md", "LICENSE"]
+}

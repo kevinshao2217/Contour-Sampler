@@ -1,0 +1,11 @@
+node_modules/
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.ndjson
+*.bacs
+*.csv
+out/
+.DS_Store
+Thumbs.db
