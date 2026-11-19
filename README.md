@@ -55,14 +55,14 @@ A zero-dependency computational geometry toolkit that extracts closed boundary l
 #### In-Browser Workstation
 Clone and start a static web server:
 ```bash
-git clone https://github.com/kevinshao2217/caustic_wavetank.git
-cd caustic_wavetank
+git clone https://github.com/kevinshao2217/Contour-Sampler.git
+cd Contour-Sampler
 npm start            # Equivalent to npx http-server -p 8080 .
 ```
 Or open `index.html` directly in any web browser without a server.
 
 > **GitHub Pages Deployment**: In repository **Settings** &rarr; **Pages**, set Source to `main` branch root.  
-> Append `?demo` to run the automatic benchmark suite: `https://kevinshao2217.github.io/caustic_wavetank/?demo`
+> Append `?demo` to run the automatic benchmark suite: `https://kevinshao2217.github.io/Contour-Sampler/?demo`
 
 #### Command-Line CLI (Requires Node.js 18+ and FFmpeg)
 ```bash
@@ -164,14 +164,14 @@ const { SamplerCore, ContourFormats } = require('@kevinshao2217/contour-sampler'
 #### 瀏覽器版 (Web UI)
 複製儲存庫並啟動本機伺服器：
 ```bash
-git clone https://github.com/kevinshao2217/caustic_wavetank.git
-cd caustic_wavetank
+git clone https://github.com/kevinshao2217/Contour-Sampler.git
+cd Contour-Sampler
 npm start            # 等同 npx http-server -p 8080 .，瀏覽器開啟 http://localhost:8080
 ```
 或直接以瀏覽器開啟 `index.html`，無需任何伺服器。
 
 > **GitHub Pages 部署**：Settings &rarr; Pages &rarr; Source 選擇 `main` 分支根目錄即可自動上線。  
-> 網址後方帶參數 `?demo` 可自動載入示範動畫（例如 `https://kevinshao2217.github.io/caustic_wavetank/?demo`）。
+> 網址後方帶參數 `?demo` 可自動載入示範動畫（例如 `https://kevinshao2217.github.io/Contour-Sampler/?demo`）。
 
 #### 命令列版 (CLI - 需要 Node.js 18+ 與 FFmpeg)
 ```bash

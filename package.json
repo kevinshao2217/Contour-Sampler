@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinshao2217/caustic_wavetank.git"
+    "url": "git+https://github.com/kevinshao2217/Contour-Sampler.git"
   },
   "bugs": {
-    "url": "https://github.com/kevinshao2217/caustic_wavetank/issues"
+    "url": "https://github.com/kevinshao2217/Contour-Sampler/issues"
   },
-  "homepage": "https://github.com/kevinshao2217/caustic_wavetank#readme",
+  "homepage": "https://github.com/kevinshao2217/Contour-Sampler#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
