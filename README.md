@@ -52,6 +52,16 @@ A zero-dependency computational geometry toolkit that extracts closed boundary l
 
 ### Quick Start
 
+#### Windows Standalone Executable (`.exe`)
+Download and double-click `Contour-Sampler.exe` (zero installation required).
+```bash
+# 1. Double-click to launch the Pro Workstation UI in your default browser
+
+# 2. Or execute CLI subcommands directly from the executable:
+./Contour-Sampler.exe sample input.mp4 -o out.bacs
+./Contour-Sampler.exe decode out.bacs -o lines.mp4 --mode outline
+```
+
 #### In-Browser Workstation
 Clone and start a static web server:
 ```bash
@@ -160,6 +170,16 @@ const { SamplerCore, ContourFormats } = require('@kevinshao2217/contour-sampler'
 - `cli/decode.js`：輪廓資料還原為剪影視訊、**純輪廓線視訊（`--mode outline`）**、PNG 序列、SVG 序列，可自動對齊附帶原音訊；各資料格式自由互轉。
 
 ### 快速開始
+
+#### Windows 獨立執行檔 (`.exe`)
+下載並直接雙擊 `Contour-Sampler.exe`（全功能打包，零安裝門檻）：
+```bash
+# 1. 雙擊直接於預設瀏覽器啟動 Pro 工作台介面
+
+# 2. 亦可直接透過 EXE 執行命令列子指令：
+./Contour-Sampler.exe sample input.mp4 -o out.bacs
+./Contour-Sampler.exe decode out.bacs -o lines.mp4 --mode outline
+```
 
 #### 瀏覽器版 (Web UI)
 複製儲存庫並啟動本機伺服器：
