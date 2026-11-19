@@ -85,6 +85,20 @@ node cli/decode.js out.bacs -o svg_frames/ --format svg
 npm test
 ```
 
+#### Package Installation (GitHub Packages / npm)
+```bash
+# Configure GitHub Packages registry for @kevinshao2217 scope
+npm config set @kevinshao2217:registry https://npm.pkg.github.com
+
+# Install as project dependency
+npm install @kevinshao2217/contour-sampler
+```
+
+Node.js library usage:
+```javascript
+const { SamplerCore, ContourFormats } = require('@kevinshao2217/contour-sampler');
+```
+
 ### Computational Algorithm
 
 1. **Spatial Discretization**: Downsamples incoming frames to a $W \times H$ grayscale grid (default $320\times 180$).
@@ -178,6 +192,20 @@ node cli/decode.js out.bacs -o svg_frames/ --format svg
 
 # 6. 執行演算法單元自我測試
 npm test
+```
+
+#### 套件安裝（GitHub Packages / npm）
+```bash
+# 設定 @kevinshao2217 作用域指向 GitHub Packages 註冊表
+npm config set @kevinshao2217:registry https://npm.pkg.github.com
+
+# 安裝為專案相依套件
+npm install @kevinshao2217/contour-sampler
+```
+
+Node.js 模組引入範例：
+```javascript
+const { SamplerCore, ContourFormats } = require('@kevinshao2217/contour-sampler');
 ```
 
 ### 演算法步驟

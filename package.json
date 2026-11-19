@@ -1,8 +1,8 @@
 {
-  "name": "contour-sampler",
+  "name": "@kevinshao2217/contour-sampler",
   "version": "1.0.0",
   "description": "Topological dual-grid boundary sampler: turn any video into clean closed contours. Browser app + CLI, zero dependencies.",
-  "license": "MIT",
+  "main": "src/index.js",
   "bin": {
     "contour-sample": "cli/sample.js",
     "contour-decode": "cli/decode.js"
@@ -11,8 +11,42 @@
     "start": "npx --yes http-server -c-1 -p 8080 .",
     "test": "node test/selftest.js",
     "sample": "node cli/sample.js",
-    "decode": "node cli/decode.js"
+    "decode": "node cli/decode.js",
+    "prepublishOnly": "npm test"
   },
-  "engines": { "node": ">=18" },
-  "files": ["index.html", "web", "src", "cli", "README.md", "LICENSE"]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinshao2217/caustic_wavetank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinshao2217/caustic_wavetank/issues"
+  },
+  "homepage": "https://github.com/kevinshao2217/caustic_wavetank#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "contour",
+    "sampler",
+    "topology",
+    "dual-grid",
+    "boundary-tracing",
+    "shoelace-formula",
+    "vector-graphics",
+    "svg",
+    "bad-apple"
+  ],
+  "author": "kevinshao2217",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.html",
+    "web",
+    "src",
+    "cli",
+    "README.md",
+    "LICENSE"
+  ]
 }
