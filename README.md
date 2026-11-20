@@ -1,4 +1,4 @@
-# Contour Sampler 拓撲邊界輪廓取樣儀
+# Contour Sampler
 
 <p align="center">
   <a href="#english"><b>English</b></a> &nbsp;|&nbsp; <a href="#繁體中文"><b>繁體中文</b></a>
