@@ -1,4 +1,3 @@
-/* node test/selftest.js — 不需要影片的自我測試 */
 'use strict';
 const assert = require('assert');
 const Core = require('../src/sampler-core.js');
@@ -6,15 +5,15 @@ const Fmt = require('../src/formats.js');
 
 const W = 120, H = 80;
 function scene() {
-  const L = new Uint8Array(W * H).fill(255);                       // 白底
+  const L = new Uint8Array(W * H).fill(255);
   const set = (x, y) => { if (x >= 0 && y >= 0 && x < W && y < H) L[y * W + x] = 0; };
   for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
     const d1 = Math.hypot(x - 35, y - 40);
-    if (d1 < 22 && d1 >= 10) set(x, y);                          // 環（外框 + 內洞）
-    if (d1 < 4) set(x, y);                                       // 環內小島（內含）
-    if (x >= 75 && x < 105 && y >= 20 && y < 60) set(x, y);      // 方塊（第二個外框）
+    if (d1 < 22 && d1 >= 10) set(x, y);
+    if (d1 < 4) set(x, y);
+    if (x >= 75 && x < 105 && y >= 20 && y < 60) set(x, y);
   }
-  set(5, 5); set(6, 5);                                          // 雜點
+  set(5, 5); set(6, 5);
   return L;
 }
 
